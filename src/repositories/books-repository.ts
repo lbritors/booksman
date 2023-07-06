@@ -27,7 +27,7 @@ export async function reviewBook(bookReview: CreateReview) {
   return await prisma.books.update({
     data: bookReview,
     where: { 
-      bookId
+      id: bookId
     }
   });
 }
